@@ -1,0 +1,8 @@
+import curry from './';
+
+const curried = curry(function(a: string) {
+  return a
+});
+
+curried('123')
+curried(123);

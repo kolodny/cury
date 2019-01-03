@@ -1,0 +1,10 @@
+declare function curry<A, R>(fn: (a: A) => R): (a: A) => R;
+declare function curry<A, B, R>(fn: (a: A, b: B) => R): (a: A) => (b: B) => R;
+declare function curry<A, B, C, R>(fn: (a: A, b: B, c: C) => R): (a: A) => (b: B) => (c: C) => R;
+declare function curry<A, B, C, D, R>(fn: (a: A, b: B, c: C, d: D) => R): (a: A) => (b: B) => (c: C) => (d: D) => R;
+declare function curry<A, B, C, D, E, R>(fn: (a: A, b: B, c: C, d: D, e: E) => R): (a: A) => (b: B) => (c: C) => (d: D) => (e: E) => R;
+declare function curry<A, B, C, D, E, F, R>(fn: (a: A, b: B, c: C, d: D, e: E, f: F) => R): (a: A) => (b: B) => (c: C) => (d: D) => (e: E) => (f: F) => R;
+declare function curry<A, B, C, D, E, F, G, R>(fn: (a: A, b: B, c: C, d: D, e: E, f: F, g: G) => R): (a: A) => (b: B) => (c: C) => (d: D) => (e: E) => (f: F) => (g: G) => R;
+declare function curry<A, B, C, D, E, F, G, H, R>(fn: (a: A, b: B, c: C, d: D, e: E, f: F, g: G, h: H) => R): (a: A) => (b: B) => (c: C) => (d: D) => (e: E) => (f: F) => (g: G) => (h: H) => R;
+declare function curry<A, B, C, D, E, F, G, H, I, R>(fn: (a: A, b: B, c: C, d: D, e: E, f: F, g: G, h: H, i: I) => R): (a: A) => (b: B) => (c: C) => (d: D) => (e: E) => (f: F) => (g: G) => (h: H) => (i: I) => R;
+export = curry;

@@ -1,0 +1,32 @@
+{
+  "name": "cury",
+  "version": "0.0.1",
+  "description": "Curry a function with typescript typing",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test-typing": "cp fail.badts fail.ts && (tsc || true) | grep 'parameter of type'",
+    "posttest-typing": "rm fail.ts fail.d.ts",
+    "preunit-tests": "npm run build",
+    "unit-tests": "mocha test",
+    "test": "npm run test-typing && npm run unit-tests"
+  },
+  "keywords": [],
+  "author": "Moshe Kolodny",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "mocha": "^5.2.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/curry.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/curry.ts/issues"
+  },
+  "homepage": "https://github.com/kolodny/curry.ts#readme"
+}
